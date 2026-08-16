@@ -2,10 +2,10 @@
   "name": "Aniruddh Bhilvare",
   "title": "Staff Software Engineer",
   "specialism": "Agentic AI & Enterprise Applications",
-  "tagline": "I build AI systems that write software — backed by 13 years of shipping backend platforms that stay up.",
+  "tagline": "Thirteen years across mobile and backend engineering — now building AI tooling that changes how teams get from requirements to running code.",
   "location": "Gujarat, India",
   "about": [
-    "I'm a Staff Software Engineer with 13+ years spent building enterprise applications — multi-tenant SaaS platforms, event-driven services on AWS, and cross-platform mobile at scale.",
+    "My career splits roughly in half. The first decade was mobile — Android and iOS at Ecosmob, Netrix, and YUJ Designs, including a SIP/VoIP client for enterprise customers and a connected-vehicle app for Citroën. Since then I've worked mainly on the backend: multi-tenant SaaS platforms, event-driven services on AWS, and the data models underneath them.",
     "For the past two years my focus has been agentic engineering: designing AI-powered developer tooling, including an \"Agentic Software Factory\" that generates working applications directly from product requirement documents. The interesting problems there aren't prompt tricks — they're orchestration, evaluation, and knowing which parts of the software lifecycle genuinely benefit from delegation to a model.",
     "Along the way I've led teams of up to 8 engineers and set the standards for system design, clean architecture, and code review."
   ],
