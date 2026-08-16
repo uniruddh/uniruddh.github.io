@@ -8,6 +8,7 @@ import ExperienceCard from "../components/ExperienceCard.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import Chip from "../components/Chip.astro";
 import Footer from "../components/Footer.astro";
+import SocialIcon from "../components/SocialIcon.astro";
 
 import profile from "../data/profile.json";
 import focus from "../data/focus.json";
@@ -166,20 +167,18 @@ import credentials from "../data/credentials.json";
           >
             {profile.email}
           </a>
-          <a
-            href={profile.links.linkedin}
-            rel="me noopener"
-            class="inline-flex items-center gap-2 rounded-md border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-700 transition-colors hover:border-ink-300 hover:bg-ink-50 dark:border-ink-800 dark:text-ink-300 dark:hover:border-ink-700 dark:hover:bg-ink-900"
-          >
-            LinkedIn
-          </a>
-          <a
-            href={profile.links.github}
-            rel="me noopener"
-            class="inline-flex items-center gap-2 rounded-md border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-700 transition-colors hover:border-ink-300 hover:bg-ink-50 dark:border-ink-800 dark:text-ink-300 dark:hover:border-ink-700 dark:hover:bg-ink-900"
-          >
-            GitHub
-          </a>
+          {
+            profile.socials.map((social) => (
+              <a
+                href={social.href}
+                rel="me noopener"
+                class="inline-flex items-center gap-2 rounded-md border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-700 transition-colors hover:border-ink-300 hover:bg-ink-50 dark:border-ink-800 dark:text-ink-300 dark:hover:border-ink-700 dark:hover:bg-ink-900"
+              >
+                <SocialIcon icon={social.icon} />
+                {social.label}
+              </a>
+            ))
+          }
         </div>
       </Section>
     </div>

@@ -45,7 +45,7 @@ const personSchema = {
     "Spring Boot",
     "AWS",
   ],
-  sameAs: [profile.links.github, profile.links.linkedin],
+  sameAs: profile.socials.map((s) => s.href),
 };
 ---
 
