@@ -21,3 +21,6 @@ pnpm-debug.log*
 # editors
 .vscode/
 .idea/
+
+# local staging dir used to sync files out of the sandbox
+sync/
