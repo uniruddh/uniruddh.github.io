@@ -9,7 +9,7 @@ interface Props {
 }
 
 const {
-  title = `${profile.name} — ${profile.title}, ${profile.specialism}`,
+  title = `${profile.name} · ${profile.title}, ${profile.specialism}`,
   description = `${profile.name} is a ${profile.title} specialising in ${profile.specialism.toLowerCase()}. ${profile.tagline}`,
 } = Astro.props;
 
@@ -91,7 +91,7 @@ const personSchema = {
             document.documentElement.classList.add("dark");
           }
         } catch (e) {
-          /* localStorage unavailable — fall back to the light default. */
+          /* localStorage unavailable; fall back to the light default. */
         }
       })();
     </script>

@@ -68,18 +68,12 @@ import credentials from "../data/credentials.json";
           {
             skills.map((group) => (
               <div>
-                <h3
-                  class={`mb-2.5 text-sm font-semibold ${
-                    group.featured
-                      ? "text-accent-600 dark:text-accent-400"
-                      : "text-ink-900 dark:text-ink-200"
-                  }`}
-                >
+                <h3 class="mb-2.5 text-sm font-semibold text-ink-900 dark:text-ink-200">
                   {group.group}
                 </h3>
                 <div class="flex flex-wrap gap-1.5">
                   {group.items.map((item) => (
-                    <Chip label={item} accent={group.featured} />
+                    <Chip label={item} />
                   ))}
                 </div>
               </div>
@@ -111,7 +105,10 @@ import credentials from "../data/credentials.json";
                       <ul class="mt-2 space-y-1">
                         {item.notes.map((note) => (
                           <li class="flex gap-2 text-xs leading-relaxed text-ink-500 dark:text-ink-400">
-                            <span aria-hidden="true">—</span>
+                            <span
+                              class="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-ink-300 dark:bg-ink-700"
+                              aria-hidden="true"
+                            />
                             <span>{note}</span>
                           </li>
                         ))}
