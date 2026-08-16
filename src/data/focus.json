@@ -4,7 +4,7 @@
   "items": [
     {
       "title": "Multi-tenant SaaS backends",
-      "body": "Leading backend architecture and delivery for Synemi and Nigel: tenant isolation, event-driven services on AWS, and the financial layer covering subscription billing, credit balances, and A/R aging. Directing a team of up to seven and setting the clean-architecture and test-coverage standards that hold as the team grows.",
+      "body": "Leading backend architecture and delivery for Synemi and Nigel: tenant isolation, event-driven services on AWS, and the financial layer covering subscription billing, credit balances, and A/R aging. Directing a team of up to seven and setting the clean architecture and test coverage standards that hold as the team grows.",
       "tags": ["NestJS", "TypeScript", "PostgreSQL", "AWS", "Event-driven"]
     },
     {

@@ -7,7 +7,7 @@
     "location": "Remote",
     "current": true,
     "highlights": [
-      "Led backend architecture and delivery for two multi-tenant SaaS products (Synemi and Nigel), directing a team of up to 7 and setting clean-architecture and test-coverage standards.",
+      "Led backend architecture and delivery for two multi-tenant SaaS products (Synemi and Nigel), directing a team of up to 7 and setting clean architecture and test coverage standards.",
       "Designed event-driven services on AWS (SQS/Lambda) for chat, email, and push notifications, and owned PostgreSQL schema, migrations, and financial features including subscription billing, credit balances, and A/R aging.",
       "Ran an internal initiative building AI-powered developer tooling: an \"Agentic Software Factory\" that generates applications directly from PRDs, plus AI summarization and Jira task automation, reducing manual planning and triage effort."
     ],
@@ -61,7 +61,7 @@
     "location": "Ahmedabad, Gujarat",
     "current": false,
     "highlights": [
-      "Established the company's mobile application development division, which had not previously existed.",
+      "Helped establish the company's first mobile application development practice, extending its delivery capability to Android and iOS.",
       "Led an 8-member team delivering concurrent client projects across telecom, education, sports, and productivity domains.",
       "Owned requirement analysis, project estimation, and technical coordination with cross-functional teams across multiple concurrent projects."
     ],
