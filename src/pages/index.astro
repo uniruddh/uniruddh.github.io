@@ -151,6 +151,40 @@ import credentials from "../data/credentials.json";
                 ))
               }
             </ul>
+
+            <h3 class="mt-8 mb-3 text-sm font-semibold text-ink-900 dark:text-ink-200">
+              Stack Overflow
+            </h3>
+            <a
+              href={credentials.stackoverflow.profileUrl}
+              rel="me noopener"
+              class="group inline-flex flex-col gap-2 no-underline"
+            >
+              {/*
+                Live flair image: reputation and badges stay current without a redeploy.
+                The fixed-size, overflow-hidden box means a blocked or failed image
+                (privacy extensions block stackoverflow.com fairly often) degrades to
+                an empty card rather than spilling alt text across the layout.
+              */}
+              <span
+                class="flex h-[58px] w-[208px] items-center justify-center overflow-hidden rounded-md border border-ink-200 bg-white transition-colors group-hover:border-ink-300 dark:border-ink-800 dark:group-hover:border-ink-700"
+              >
+                <img
+                  src={credentials.stackoverflow.flairUrl}
+                  alt={credentials.stackoverflow.alt}
+                  width="208"
+                  height="58"
+                  loading="lazy"
+                  decoding="async"
+                  class="max-h-full max-w-full"
+                />
+              </span>
+              <span
+                class="text-xs text-ink-500 underline decoration-ink-300 underline-offset-2 transition-colors group-hover:text-accent-600 dark:text-ink-400 dark:decoration-ink-700 dark:group-hover:text-accent-400"
+              >
+                View full profile →
+              </span>
+            </a>
           </div>
         </div>
       </Section>

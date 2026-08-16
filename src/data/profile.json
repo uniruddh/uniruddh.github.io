@@ -4,7 +4,6 @@
   "specialism": "Agentic AI & Distributed Systems",
   "tagline": "I build AI systems that write software — backed by 13 years of shipping backend platforms that stay up.",
   "location": "Gujarat, India",
-  "availability": "Open to staff and principal engineering conversations",
   "about": [
     "I'm a Staff Software Engineer with 13+ years spent on backend and distributed systems — multi-tenant SaaS platforms, event-driven services on AWS, and cross-platform mobile at scale.",
     "For the past two years my focus has been agentic engineering: designing AI-powered developer tooling, including an \"Agentic Software Factory\" that generates working applications directly from product requirement documents. The interesting problems there aren't prompt tricks — they're orchestration, evaluation, and knowing which parts of the software lifecycle genuinely benefit from delegation to a model.",

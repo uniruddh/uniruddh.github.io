@@ -1,13 +1,17 @@
 ---
 import profile from "../data/profile.json";
-const year = new Date().getFullYear();
+
+// Evaluated at build time, so every deploy refreshes the recency signal.
+const built = new Date();
+const year = built.getFullYear();
+const updated = built.toLocaleDateString("en-GB", { month: "long", year: "numeric" });
 ---
 
 <footer
   class="mt-8 border-t border-ink-100 py-8 text-sm text-ink-500 dark:border-ink-900 dark:text-ink-400"
 >
   <div class="flex flex-wrap items-center justify-between gap-3">
-    <p>© {year} {profile.name}</p>
+    <p>© {year} {profile.name} · Updated {updated}</p>
     <p class="no-print">
       Built with <a
         href="https://astro.build"
