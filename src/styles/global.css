@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* Dark mode driven by a `.dark` class on <html>, set before paint by an
+   inline script in Layout.astro so there is no flash of the wrong theme. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
+
+  /* Ink: near-black / near-white rather than pure, which reads softer. */
+  --color-ink-50: #f7f8f8;
+  --color-ink-100: #eceeef;
+  --color-ink-200: #d6dadc;
+  --color-ink-300: #b0b7bb;
+  --color-ink-400: #838d93;
+  --color-ink-500: #667077;
+  --color-ink-600: #515a60;
+  --color-ink-700: #434a4f;
+  --color-ink-800: #2a2f33;
+  --color-ink-900: #1a1e21;
+  --color-ink-950: #111417;
+
+  /* One accent, desaturated teal. Used only for links and active state. */
+  --color-accent-400: #4db8ac;
+  --color-accent-500: #2f9e91;
+  --color-accent-600: #1f7f75;
+  --color-accent-700: #1a6660;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchor targets so headings don't hide under the sticky nav. */
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-white text-ink-800 antialiased;
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+
+  .dark body {
+    @apply bg-ink-950 text-ink-200;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-600;
+    border-radius: 2px;
+  }
+
+  .dark :focus-visible {
+    @apply outline-accent-400;
+  }
+
+  ::selection {
+    @apply bg-accent-500/25;
+  }
+}
+
+@layer components {
+  /* Sections fade in on scroll; the class is only added by JS when
+     IntersectionObserver is available, so no-JS users see everything. */
+  .js-reveal {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+
+  .js-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .js-reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+/* Print: strip chrome so Ctrl-P produces something usable. */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

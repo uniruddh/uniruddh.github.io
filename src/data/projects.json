@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Synemi",
+    "subtitle": "HOA & community management platform",
+    "period": "Aug 2025 – Present",
+    "role": "Backend architecture and delivery lead",
+    "description": "A multi-tenant community and association management platform. I own the backend architecture — tenant isolation, event-driven notification services on AWS, and the financial layer covering subscription billing, credit balances, and A/R aging.",
+    "stack": ["NestJS", "TypeScript", "PostgreSQL", "TypeORM", "AWS SQS", "AWS Lambda", "AWS SES"],
+    "visibility": "private"
+  },
+  {
+    "name": "Nigel",
+    "subtitle": "Restaurant management platform backend",
+    "period": "Feb 2024 – Jan 2025",
+    "role": "Backend lead",
+    "description": "Multi-tenant admin backend powering management of franchise brands, restaurants, menus, and pricing across concepts. Built the domain model and API surface that keeps pricing coherent when one brand spans many locations.",
+    "stack": ["Kotlin", "Java", "Spring Boot", "REST APIs", "PostgreSQL"],
+    "visibility": "private"
+  },
+  {
+    "name": "MyCitroën Connect",
+    "subtitle": "Connected-vehicle app for Citroën EV and ICE cars",
+    "period": "Mar 2022 – Feb 2023",
+    "role": "Mobile tech lead",
+    "description": "Android and iOS app for Citroën vehicle owners, delivered with Tata Elxsi. Re-architected the iOS network layer for refresh-token authentication and authored the security and SDLC documentation that passed the Thales security audit.",
+    "stack": ["Android SDK", "iOS SDK", "Retrofit", "Alamofire", "Firebase", "APNS", "Google Maps"],
+    "visibility": "shipped"
+  },
+  {
+    "name": "TetraVX nVX",
+    "subtitle": "Multi-channel cloud VoIP client for enterprise",
+    "period": "Jul 2017 – Feb 2022",
+    "role": "Tech lead",
+    "description": "Cross-platform SIP/VoIP client for enterprise customers, built on Linphone with offline-capable local storage. Paired with a Kafka-backed Spring Boot service processing real-time call data and audio recordings.",
+    "stack": ["Linphone", "Android SDK", "iOS SDK", "Couchbase Lite", "CallKit", "APNS", "Kafka"],
+    "visibility": "shipped"
+  },
+  {
+    "name": "Direct Sports Network",
+    "subtitle": "OTT streaming app for live sports",
+    "period": "Jan 2016 – Jun 2017",
+    "role": "Lead developer",
+    "description": "Television and streaming app delivering ice hockey, football, and NASCAR content, including a custom ad-streaming pipeline for the living-room form factor.",
+    "stack": ["Android Leanback SDK", "Amazon Fire TV SDK", "Media streaming", "REST API"],
+    "visibility": "shipped"
+  }
+]

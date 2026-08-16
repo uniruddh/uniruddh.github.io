@@ -1,0 +1,16 @@
+---
+interface Props {
+  label: string;
+  accent?: boolean;
+}
+
+const { label, accent = false } = Astro.props;
+
+const base =
+  "inline-flex items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset";
+const tone = accent
+  ? "bg-accent-500/10 text-accent-700 ring-accent-600/20 dark:text-accent-400 dark:ring-accent-400/25"
+  : "bg-ink-50 text-ink-600 ring-ink-200 dark:bg-ink-900 dark:text-ink-400 dark:ring-ink-800";
+---
+
+<span class={`${base} ${tone}`}>{label}</span>

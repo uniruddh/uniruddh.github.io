@@ -1,0 +1,56 @@
+[
+  {
+    "group": "Agentic Engineering",
+    "featured": true,
+    "items": [
+      "Agentic workflows",
+      "Multi-agent orchestration",
+      "LLM API integration",
+      "Google Gemini",
+      "Prompt engineering",
+      "AI summarization",
+      "AI-assisted development (Claude Code, Warp)"
+    ]
+  },
+  {
+    "group": "Languages",
+    "featured": false,
+    "items": ["TypeScript", "Java", "Kotlin", "Dart", "Swift"]
+  },
+  {
+    "group": "Backend & Data",
+    "featured": false,
+    "items": [
+      "NestJS",
+      "Spring Boot",
+      "REST APIs",
+      "Microservices",
+      "Apache Kafka",
+      "Debezium",
+      "TypeORM",
+      "PostgreSQL",
+      "Elasticsearch"
+    ]
+  },
+  {
+    "group": "Mobile",
+    "featured": false,
+    "items": ["Android SDK", "iOS SDK", "Flutter", "Firebase", "Couchbase Lite", "SQLite"]
+  },
+  {
+    "group": "Cloud & DevOps",
+    "featured": false,
+    "items": [
+      "AWS EC2",
+      "AWS RDS",
+      "AWS S3",
+      "AWS SQS",
+      "AWS Lambda",
+      "AWS SES",
+      "CloudFront",
+      "Route 53",
+      "Docker",
+      "GitHub Actions"
+    ]
+  }
+]

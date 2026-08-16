@@ -1,0 +1,49 @@
+---
+import Chip from "./Chip.astro";
+
+interface Props {
+  name: string;
+  subtitle: string;
+  period: string;
+  role: string;
+  description: string;
+  stack: string[];
+  visibility: string;
+}
+
+const { name, subtitle, period, role, description, stack, visibility } = Astro.props;
+
+// Be explicit that client work has no public repo. Saying so reads as
+// credible; a dead "View code" link does not.
+const visibilityLabel =
+  visibility === "private" ? "Private · client work" : "Shipped · client work";
+---
+
+<article
+  class="rounded-lg border border-ink-200 p-5 transition-colors hover:border-ink-300 dark:border-ink-800 dark:hover:border-ink-700"
+>
+  <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+    <h3 class="text-base font-semibold text-ink-950 dark:text-ink-50">{name}</h3>
+    <p class="font-mono text-xs whitespace-nowrap text-ink-500 dark:text-ink-400">
+      {period}
+    </p>
+  </div>
+
+  <p class="mt-1 text-sm font-medium text-ink-600 dark:text-ink-400">{subtitle}</p>
+
+  <p class="mt-3 text-sm leading-relaxed text-ink-600 dark:text-ink-400">
+    {description}
+  </p>
+
+  <dl class="mt-3 flex flex-wrap items-center gap-x-2 text-xs text-ink-500 dark:text-ink-400">
+    <dt class="sr-only">Role</dt>
+    <dd>{role}</dd>
+    <span aria-hidden="true">·</span>
+    <dt class="sr-only">Availability</dt>
+    <dd>{visibilityLabel}</dd>
+  </dl>
+
+  <div class="mt-4 flex flex-wrap gap-1.5">
+    {stack.map((tech) => <Chip label={tech} />)}
+  </div>
+</article>

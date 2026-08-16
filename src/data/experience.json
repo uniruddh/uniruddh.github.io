@@ -1,0 +1,69 @@
+[
+  {
+    "role": "Staff Software Engineer",
+    "company": "Particle41",
+    "start": "Feb 2024",
+    "end": "Present",
+    "location": "Remote",
+    "current": true,
+    "highlights": [
+      "Built AI-powered developer tooling — an \"Agentic Software Factory\" that generates applications directly from PRDs, plus AI summarization and Jira task automation — sharply cutting manual planning and triage.",
+      "Led backend architecture and delivery for two multi-tenant SaaS products (Synemi and Nigel), directing a team of up to 7 and setting clean-architecture and test-coverage standards.",
+      "Designed event-driven services on AWS (SQS/Lambda) for chat, email, and push notifications, and owned PostgreSQL schema, migrations, and financial features including subscription billing, credit balances, and A/R aging."
+    ],
+    "stack": ["NestJS", "TypeScript", "PostgreSQL", "TypeORM", "AWS", "Gemini"]
+  },
+  {
+    "role": "Tech Lead",
+    "company": "Soomuch.ai",
+    "start": "Feb 2023",
+    "end": "Feb 2024",
+    "location": "Remote",
+    "current": false,
+    "highlights": [
+      "Built the core database, REST APIs, and Flutter mobile app for Soomuch.ai — India's first multi-module SaaS business ecosystem for educational institutions."
+    ],
+    "stack": ["Flutter", "Dart", "REST APIs", "PostgreSQL"]
+  },
+  {
+    "role": "Tech Lead",
+    "company": "YUJ Designs",
+    "start": "Mar 2022",
+    "end": "Feb 2023",
+    "location": "Remote",
+    "current": false,
+    "highlights": [
+      "Led Android and iOS development of the MyCitroën connected-vehicle app, in collaboration with Tata Elxsi.",
+      "Re-architected the iOS network layer to add refresh-token authentication.",
+      "Authored security, requirements, and SDLC documentation to pass the Thales security audit."
+    ],
+    "stack": ["Android SDK", "iOS SDK", "Swift", "Kotlin", "Firebase"]
+  },
+  {
+    "role": "Tech Lead",
+    "company": "Netrix Worldwide",
+    "start": "Jul 2017",
+    "end": "Feb 2022",
+    "location": "Pune, Maharashtra",
+    "current": false,
+    "highlights": [
+      "Built a cross-platform SIP/VoIP client for Android and iOS using Linphone, Couchbase Lite, and REST APIs.",
+      "Developed a Spring Boot microservice with Apache Kafka to process real-time call data and audio recordings.",
+      "Built a Java/Spring Boot reporting service backed by Elasticsearch."
+    ],
+    "stack": ["Java", "Spring Boot", "Apache Kafka", "Elasticsearch", "Linphone"]
+  },
+  {
+    "role": "Tech Lead",
+    "company": "Ecosmob Technologies",
+    "start": "Apr 2013",
+    "end": "Jul 2017",
+    "location": "Ahmedabad, Gujarat",
+    "current": false,
+    "highlights": [
+      "Led an 8-member team delivering concurrent client projects across telecom, education, sports, and productivity domains.",
+      "Owned requirement analysis, project estimation, and technical coordination with cross-functional teams."
+    ],
+    "stack": ["Android SDK", "Java", "REST APIs"]
+  }
+]

@@ -1,0 +1,192 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
+import FocusCard from "../components/FocusCard.astro";
+import ExperienceCard from "../components/ExperienceCard.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import Chip from "../components/Chip.astro";
+import Footer from "../components/Footer.astro";
+
+import profile from "../data/profile.json";
+import focus from "../data/focus.json";
+import experience from "../data/experience.json";
+import projects from "../data/projects.json";
+import skills from "../data/skills.json";
+import credentials from "../data/credentials.json";
+---
+
+<Layout>
+  <Nav />
+
+  <main id="main" class="mx-auto max-w-3xl px-5 sm:px-6">
+    <Hero />
+
+    <div class="divide-y divide-ink-100 dark:divide-ink-900">
+      <Section id="focus" title={focus.heading} lead={focus.lead}>
+        <div class="space-y-9">
+          {
+            focus.items.map((item, i) => (
+              <FocusCard title={item.title} body={item.body} tags={item.tags} index={i} />
+            ))
+          }
+        </div>
+      </Section>
+
+      <Section id="about" title="About">
+        <div class="max-w-2xl space-y-4">
+          {
+            profile.about.map((para) => (
+              <p class="text-base leading-relaxed text-ink-600 dark:text-ink-400">
+                {para}
+              </p>
+            ))
+          }
+        </div>
+      </Section>
+
+      <Section id="experience" title="Experience">
+        <div>
+          {experience.map((job) => <ExperienceCard {...job} />)}
+        </div>
+      </Section>
+
+      <Section
+        id="projects"
+        title="Selected projects"
+        lead="Most of my recent work lives in private client repositories. These are the systems I'd want to talk through in an interview."
+      >
+        <div class="grid gap-4 sm:grid-cols-2">
+          {projects.map((project) => <ProjectCard {...project} />)}
+        </div>
+      </Section>
+
+      <Section id="skills" title="Skills">
+        <div class="space-y-6">
+          {
+            skills.map((group) => (
+              <div>
+                <h3
+                  class={`mb-2.5 text-sm font-semibold ${
+                    group.featured
+                      ? "text-accent-600 dark:text-accent-400"
+                      : "text-ink-900 dark:text-ink-200"
+                  }`}
+                >
+                  {group.group}
+                </h3>
+                <div class="flex flex-wrap gap-1.5">
+                  {group.items.map((item) => (
+                    <Chip label={item} accent={group.featured} />
+                  ))}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </Section>
+
+      <Section id="credentials" title="Education & publications">
+        <div class="grid gap-10 sm:grid-cols-2">
+          <div>
+            <h3 class="mb-4 text-sm font-semibold text-ink-900 dark:text-ink-200">
+              Education
+            </h3>
+            <ul class="space-y-5">
+              {
+                credentials.education.map((item) => (
+                  <li>
+                    <p class="text-sm font-medium text-ink-900 dark:text-ink-100">
+                      {item.credential}
+                    </p>
+                    <p class="text-sm text-ink-600 dark:text-ink-400">
+                      {item.institution}
+                    </p>
+                    <p class="font-mono text-xs text-ink-500 dark:text-ink-400">
+                      {item.period} · {item.location}
+                    </p>
+                    {item.notes.length > 0 && (
+                      <ul class="mt-2 space-y-1">
+                        {item.notes.map((note) => (
+                          <li class="flex gap-2 text-xs leading-relaxed text-ink-500 dark:text-ink-400">
+                            <span aria-hidden="true">—</span>
+                            <span>{note}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="mb-4 text-sm font-semibold text-ink-900 dark:text-ink-200">
+              Publications
+            </h3>
+            <ul class="space-y-5">
+              {
+                credentials.publications.map((pub) => (
+                  <li>
+                    <p class="text-sm font-medium text-ink-900 dark:text-ink-100">
+                      {pub.url ? (
+                        <a
+                          href={pub.url}
+                          rel="noopener"
+                          class="underline decoration-ink-300 underline-offset-2 transition-colors hover:text-accent-600 dark:decoration-ink-700 dark:hover:text-accent-400"
+                        >
+                          {pub.title}
+                        </a>
+                      ) : (
+                        pub.title
+                      )}
+                    </p>
+                    <p class="font-mono text-xs text-ink-500 dark:text-ink-400">
+                      {pub.date}
+                    </p>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </Section>
+
+      <Section
+        id="contact"
+        title="Contact"
+        lead="Best reached by email. I read everything, and I reply to anything that isn't a template."
+      >
+        <div class="flex flex-wrap gap-3">
+          <a
+            href={`mailto:${profile.email}`}
+            class="inline-flex items-center gap-2 rounded-md bg-ink-900 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-ink-800 dark:bg-white dark:text-ink-950 dark:hover:bg-ink-100"
+          >
+            {profile.email}
+          </a>
+          <a
+            href={profile.links.linkedin}
+            rel="me noopener"
+            class="inline-flex items-center gap-2 rounded-md border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-700 transition-colors hover:border-ink-300 hover:bg-ink-50 dark:border-ink-800 dark:text-ink-300 dark:hover:border-ink-700 dark:hover:bg-ink-900"
+          >
+            LinkedIn
+          </a>
+          <a
+            href={profile.links.github}
+            rel="me noopener"
+            class="inline-flex items-center gap-2 rounded-md border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-700 transition-colors hover:border-ink-300 hover:bg-ink-50 dark:border-ink-800 dark:text-ink-300 dark:hover:border-ink-700 dark:hover:bg-ink-900"
+          >
+            GitHub
+          </a>
+        </div>
+      </Section>
+    </div>
+
+  </main>
+
+  <div class="mx-auto max-w-3xl px-5 sm:px-6">
+    <Footer />
+  </div>
+</Layout>
