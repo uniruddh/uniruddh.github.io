@@ -75,6 +75,28 @@
 }
 
 @layer components {
+  /* Horizontal nav scroll on narrow screens without a visible scrollbar. */
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Fade the right edge so a clipped nav item reads as "scroll for more"
+     rather than as a rendering bug. Removed once everything fits. */
+  .nav-fade {
+    mask-image: linear-gradient(to right, black calc(100% - 28px), transparent);
+  }
+
+  @media (min-width: 64rem) {
+    .nav-fade {
+      mask-image: none;
+    }
+  }
+
   /* Sections fade in on scroll; the class is only added by JS when
      IntersectionObserver is available, so no-JS users see everything. */
   .js-reveal {

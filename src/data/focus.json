@@ -1,21 +1,16 @@
 {
   "heading": "What I'm building now",
-  "lead": "At Particle41 I work on agentic developer tooling — systems where models do real engineering work inside a pipeline that can be trusted, measured, and repeated.",
+  "lead": "At Particle41 I lead backend architecture for multi-tenant SaaS products, and run an internal initiative building agentic developer tooling alongside it.",
   "items": [
     {
-      "title": "Agentic Software Factory",
-      "body": "AI developer tooling that takes a product requirements document and generates a working application from it. The hard parts are orchestration across multiple agents, keeping generated code inside architectural guardrails, and building the evaluation loop that tells you whether the output is actually good.",
-      "tags": ["Multi-agent orchestration", "LLM APIs", "Prompt engineering", "Google Gemini"]
-    },
-    {
-      "title": "AI summarization & Jira automation",
-      "body": "Tooling that compresses planning and triage work — automated summarization plus Jira task generation and routing — cutting the manual overhead that sits between a requirement and a ticket a developer can pick up.",
-      "tags": ["AI summarization", "Workflow automation", "Jira API"]
-    },
-    {
       "title": "Multi-tenant SaaS backends",
-      "body": "The other half of the job: leading backend architecture and delivery for Synemi and Nigel, directing a team of up to seven engineers and setting clean-architecture and test-coverage standards that hold up as the team grows.",
+      "body": "Leading backend architecture and delivery for Synemi and Nigel — tenant isolation, event-driven services on AWS, and the financial layer covering subscription billing, credit balances, and A/R aging. Directing a team of up to seven and setting the clean-architecture and test-coverage standards that hold as the team grows.",
       "tags": ["NestJS", "TypeScript", "PostgreSQL", "AWS", "Event-driven"]
+    },
+    {
+      "title": "Agentic Software Factory",
+      "body": "An internal initiative at Particle41: AI developer tooling that takes a product requirements document and generates a working application from it. The hard parts are orchestration across multiple agents, keeping generated code inside architectural guardrails, and building the evaluation loop that tells you whether the output is actually good.",
+      "tags": ["Multi-agent orchestration", "LLM APIs", "Prompt engineering", "Google Gemini"]
     }
   ]
 }

@@ -6,7 +6,7 @@
   "location": "Gujarat, India",
   "about": [
     "My career splits roughly in half. The first decade was mobile — Android and iOS at Ecosmob, Netrix, and YUJ Designs, including a SIP/VoIP client for enterprise customers and a connected-vehicle app for Citroën. Since then I've worked mainly on the backend: multi-tenant SaaS platforms, event-driven services on AWS, and the data models underneath them.",
-    "For the past two years my focus has been agentic engineering: designing AI-powered developer tooling, including an \"Agentic Software Factory\" that generates working applications directly from product requirement documents. The interesting problems there aren't prompt tricks — they're orchestration, evaluation, and knowing which parts of the software lifecycle genuinely benefit from delegation to a model.",
+    "For the past two years I've also been working on agentic engineering — an internal initiative at Particle41 designing AI-powered developer tooling, including an \"Agentic Software Factory\" that generates working applications directly from product requirement documents. The interesting problems there aren't prompt tricks — they're orchestration, evaluation, and knowing which parts of the software lifecycle genuinely benefit from delegation to a model.",
     "Along the way I've led teams of up to 8 engineers and set the standards for system design, clean architecture, and code review."
   ],
   "email": "uniruddh@gmail.com",
