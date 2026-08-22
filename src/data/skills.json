@@ -1,60 +1,62 @@
 [
   {
-    "group": "Agentic Engineering",
+    "group": "AI Engineering",
     "items": [
       "Agentic workflows",
       "Multi-agent orchestration",
       "LLM API integration",
+      "AI evaluation",
       "Google Gemini",
-      "Prompt engineering",
-      "AI summarization"
+      "Prompt engineering"
     ]
   },
   {
-    "group": "Languages",
+    "group": "Programming Languages",
     "items": ["TypeScript", "Java", "Kotlin", "Dart", "Swift"]
   },
   {
-    "group": "Backend & Data",
+    "group": "Backend & Distributed Systems",
     "items": [
       "NestJS",
       "Spring Boot",
-      "REST APIs",
-      "Microservices",
-      "Apache Kafka",
-      "Debezium",
       "TypeORM",
       "PostgreSQL",
-      "Elasticsearch"
+      "Redis",
+      "Debezium",
+      "Elasticsearch",
+      "Stripe",
+      "Event-driven architecture",
+      "REST APIs",
+      "Jest",
+      "Supertest"
     ]
   },
   {
-    "group": "Mobile",
+    "group": "Mobile & Real-time Communications",
     "items": [
+      "Flutter",
       "Android SDK",
       "iOS SDK",
-      "Flutter",
-      "Firebase",
+      "Firebase Cloud Messaging",
       "Couchbase Lite",
-      "SQLite"
+      "SIP",
+      "VoIP",
+      "Linphone",
+      "CallKit",
+      "APNs"
     ]
-  },
-  {
-    "group": "Telephony & Real-time",
-    "items": ["SIP", "VoIP", "Linphone", "CallKit", "APNS", "Push notifications"]
   },
   {
     "group": "Cloud & DevOps",
     "items": [
-      "AWS EC2",
+      "AWS",
+      "AWS Lambda",
+      "AWS SQS",
+      "AWS EventBridge",
       "AWS RDS",
       "AWS S3",
-      "AWS SQS",
-      "AWS Lambda",
       "AWS SES",
       "CloudFront",
-      "Route 53",
-      "Docker",
       "GitHub Actions"
     ]
   }
