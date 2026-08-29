@@ -23,7 +23,8 @@
       "label": "Stack Overflow",
       "icon": "stackoverflow",
       "href": "https://stackoverflow.com/users/2571277/uniruddh"
-    }
+    },
+    { "label": "X", "icon": "x", "href": "https://x.com/uniruddh" }
   ],
   "givenName": "Aniruddh",
   "familyName": "Bhilvare",
