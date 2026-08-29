@@ -16,9 +16,15 @@ const {
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL("/og-image.png", Astro.site);
 
+// Stable identifiers so the Person and WebSite nodes reference one another
+// instead of Google having to infer that they describe the same entity.
+const siteRoot = new URL("/", Astro.site).href;
+const personId = `${siteRoot}#person`;
+const websiteId = `${siteRoot}#website`;
+
 const personSchema = {
-  "@context": "https://schema.org",
   "@type": "Person",
+  "@id": personId,
   name: profile.name,
   givenName: profile.givenName,
   familyName: profile.familyName,
@@ -28,7 +34,11 @@ const personSchema = {
   email: `mailto:${profile.email}`,
   url: canonical.href,
   image: ogImage.href,
-  worksFor: { "@type": "Organization", name: "Particle41" },
+  worksFor: {
+    "@type": "Organization",
+    name: "Particle41",
+    url: "https://particle41.com",
+  },
   address: {
     "@type": "PostalAddress",
     addressRegion: "Gujarat",
@@ -37,6 +47,7 @@ const personSchema = {
   alumniOf: {
     "@type": "CollegeOrUniversity",
     name: "L. D. College of Engineering, Gujarat Technological University",
+    url: "https://ldce.ac.in/",
   },
   knowsAbout: [
     "Agentic AI engineering",
@@ -49,6 +60,24 @@ const personSchema = {
     "AWS",
   ],
   sameAs: profile.sameAs,
+};
+
+// Declares the site name Google shows above the result, instead of letting it
+// derive something from the github.io host. Home page only, per Google's spec.
+const websiteSchema = {
+  "@type": "WebSite",
+  "@id": websiteId,
+  name: profile.name,
+  alternateName: profile.alternateName,
+  url: siteRoot,
+  inLanguage: "en",
+  publisher: { "@id": personId },
+  about: { "@id": personId },
+};
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [personSchema, websiteSchema],
 };
 ---
 
@@ -67,6 +96,7 @@ const personSchema = {
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonical.href} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    {profile.sameAs.map((href) => <link rel="me" href={href} />)}
     <meta name="generator" content={Astro.generator} />
 
     <title>{title}</title>
@@ -82,14 +112,16 @@ const personSchema = {
     <meta property="og:image" content={ogImage.href} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${profile.name} — ${profile.title}`} />
     <meta property="og:site_name" content={profile.name} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage.href} />
+    <meta name="twitter:image:alt" content={`${profile.name} — ${profile.title}`} />
 
-    <script is:inline set:html={JSON.stringify(personSchema)} type="application/ld+json" />
+    <script is:inline set:html={JSON.stringify(schema)} type="application/ld+json" />
 
     {/* Set the theme before first paint to avoid a flash of the wrong colours. */}
     <script is:inline>
