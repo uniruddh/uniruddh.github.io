@@ -20,6 +20,9 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: profile.name,
+  givenName: profile.givenName,
+  familyName: profile.familyName,
+  alternateName: profile.alternateName,
   jobTitle: profile.title,
   description: description,
   email: `mailto:${profile.email}`,
@@ -45,7 +48,7 @@ const personSchema = {
     "Spring Boot",
     "AWS",
   ],
-  sameAs: profile.socials.map((s) => s.href),
+  sameAs: profile.sameAs,
 };
 ---
 
@@ -54,6 +57,13 @@ const personSchema = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="google-site-verification" content="DWsDfxNteZOKgVLh89VXVTwNFHyMnPa5-0sCfOmpbAw" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonical.href} />
     <link rel="sitemap" href="/sitemap-index.xml" />
