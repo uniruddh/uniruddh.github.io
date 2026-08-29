@@ -15,6 +15,7 @@ const {
 
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL("/og-image.png", Astro.site);
+const photo = new URL(profile.photo, Astro.site);
 
 // Stable identifiers so the Person and WebSite nodes reference one another
 // instead of Google having to infer that they describe the same entity.
@@ -33,7 +34,7 @@ const personSchema = {
   description: description,
   email: `mailto:${profile.email}`,
   url: canonical.href,
-  image: ogImage.href,
+  image: photo.href,
   worksFor: {
     "@type": "Organization",
     name: "Particle41",

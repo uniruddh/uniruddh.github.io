@@ -4,17 +4,35 @@ import SocialIcon from "./SocialIcon.astro";
 ---
 
 <section id="top" class="pt-14 pb-4 sm:pt-20">
-  <h1
-    class="text-4xl font-semibold tracking-tight text-ink-950 sm:text-5xl dark:text-white"
-  >
-    {profile.name}
-  </h1>
+  <div class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-6">
+    <picture class="shrink-0">
+      <source srcset={profile.photoWebp} type="image/webp" />
+      <img
+        src={profile.photo}
+        alt={profile.name}
+        width="512"
+        height="512"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+        class="h-20 w-20 rounded-full object-cover ring-1 ring-ink-200 sm:h-24 sm:w-24 dark:ring-ink-800"
+      />
+    </picture>
 
-  <p class="mt-3 text-lg font-medium text-ink-700 sm:text-xl dark:text-ink-300">
-    {profile.title}<span class="text-ink-400 dark:text-ink-600">&nbsp;·&nbsp;</span><span
-      class="text-accent-600 dark:text-accent-400">{profile.specialism}</span
-    >
-  </p>
+    <div>
+      <h1
+        class="text-4xl font-semibold tracking-tight text-ink-950 sm:text-5xl dark:text-white"
+      >
+        {profile.name}
+      </h1>
+
+      <p class="mt-3 text-lg font-medium text-ink-700 sm:text-xl dark:text-ink-300">
+        {profile.title}<span class="text-ink-400 dark:text-ink-600">&nbsp;·&nbsp;</span><span
+          class="text-accent-600 dark:text-accent-400">{profile.specialism}</span
+        >
+      </p>
+    </div>
+  </div>
 
   <p
     class="mt-6 max-w-2xl text-balance text-lg leading-relaxed text-ink-600 dark:text-ink-400"
