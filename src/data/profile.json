@@ -1,12 +1,12 @@
 {
   "name": "Aniruddh Bhilvare",
   "title": "Staff Software Engineer",
-  "specialism": "Agentic AI & Enterprise Applications",
-  "tagline": "Thirteen years across mobile and backend engineering, now building AI tooling that changes how teams get from requirements to running code.",
+  "specialism": "AI-Assisted Tooling & Enterprise Applications",
+  "tagline": "Thirteen years across mobile and backend engineering, now building AI-assisted tooling and enterprise applications that help teams move from complex requirements to reliable software.",
   "location": "Gujarat, India",
   "about": [
-    "I'm Aniruddh Bhilvare, a Staff Software Engineer based in Gujarat, India. My career splits roughly in half. The first decade was mobile, building Android and iOS applications at Ecosmob, Netrix, and YUJ Designs, including a SIP/VoIP client for enterprise customers and a connected-vehicle app for Citroën. Since then I've worked mainly on the backend: multi-tenant SaaS platforms, event-driven services on AWS, and the data models underneath them.",
-    "For the past two years I've also been working on agentic engineering, an internal initiative at Particle41 designing AI-powered developer tooling that includes an \"Agentic Software Factory\" for generating working applications directly from product requirement documents. The interesting problems there aren't prompt tricks; they're orchestration, evaluation, and knowing which parts of the software lifecycle genuinely benefit from delegation to a model.",
+    "I'm Aniruddh Bhilvare, a Staff Software Engineer based in Gujarat, India. My career splits roughly in half. The first decade was mobile, building Android and iOS applications at Ecosmob, Netrix, and YUJ Designs, including a SIP/VoIP client for enterprise customers and a connected-vehicle app for Citroën. Since then I've worked mainly on the backend: multi-tenant SaaS platforms, cloud services, and the data models underneath them.",
+    "For the past two years I've also been working on AI-assisted engineering at Particle41, designing developer tooling and workflow automation that help teams reason about requirements, implementation paths, and delivery quality. The interesting problems there aren't prompt tricks; they're orchestration, evaluation, and knowing which parts of the software lifecycle genuinely benefit from delegation to a model.",
     "Along the way I've led teams of up to 8 engineers and set the standards for system design, clean architecture, and code review."
   ],
   "email": "uniruddh@gmail.com",

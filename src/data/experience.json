@@ -7,9 +7,9 @@
     "location": "Remote",
     "current": true,
     "highlights": [
-      "Led backend architecture and delivery for two multi-tenant SaaS products (Synemi and Nigel), directing a team of up to 7 and setting clean architecture and test coverage standards.",
-      "Designed event-driven services on AWS (SQS/Lambda) for chat, email, and push notifications, and owned PostgreSQL schema, migrations, and financial features including subscription billing, credit balances, and A/R aging.",
-      "Ran an internal initiative building AI-powered developer tooling: an \"Agentic Software Factory\" that generates applications directly from PRDs, plus AI summarization and Jira task automation, reducing manual planning and triage effort."
+      "Led backend architecture and delivery for HOA Management and Restaurant Management product work, directing a team of up to 7 and setting clean architecture and test coverage standards.",
+      "Designed scalable cloud-backed services and data models for multi-tenant enterprise applications while guiding delivery quality across backend teams.",
+      "Built AI-assisted developer tooling and engineering workflow automation to reduce manual planning, review, and delivery coordination effort."
     ],
     "stack": ["NestJS", "TypeScript", "PostgreSQL", "TypeORM", "AWS", "Gemini"]
   },
