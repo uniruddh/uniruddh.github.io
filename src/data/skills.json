@@ -1,63 +1,73 @@
 [
   {
+    "group": "Architecture & Engineering",
+    "items": [
+      "SaaS Architecture",
+      "System Design",
+      "Multi-Tenant Architecture",
+      "Event-Driven Architecture",
+      "Domain-Driven Design",
+      "Clean Architecture",
+      "API Design",
+      "Scalability & Reliability"
+    ]
+  },
+  {
     "group": "AI Engineering",
     "items": [
-      "Agentic workflows",
-      "Multi-agent orchestration",
-      "LLM API integration",
-      "AI evaluation",
-      "Google Gemini",
-      "Prompt engineering"
+      "Agentic AI",
+      "AI-Assisted Software Engineering",
+      "Multi-Agent Orchestration",
+      "AI Evaluation",
+      "Developer Tooling",
+      "Anthropic Claude",
+      "Google Gemini"
     ]
   },
   {
     "group": "Programming Languages",
-    "items": ["TypeScript", "Java", "Kotlin", "Dart", "Swift"]
+    "items": ["TypeScript", "Kotlin", "Java", "Dart", "Swift"]
   },
   {
-    "group": "Backend & Distributed Systems",
+    "group": "Backend Engineering",
     "items": [
       "NestJS",
       "Spring Boot",
       "TypeORM",
+      "Hibernate",
       "PostgreSQL",
       "Redis",
-      "Debezium",
       "Elasticsearch",
-      "Stripe",
-      "Event-driven architecture",
-      "REST APIs",
-      "Jest",
-      "Supertest"
+      "Debezium",
+      "REST APIs"
     ]
   },
   {
-    "group": "Mobile & Real-time Communications",
-    "items": [
-      "Flutter",
-      "Android SDK",
-      "iOS SDK",
-      "Firebase Cloud Messaging",
-      "Couchbase Lite",
-      "SIP",
-      "VoIP",
-      "Linphone",
-      "CallKit",
-      "APNs"
-    ]
-  },
-  {
-    "group": "Cloud & DevOps",
+    "group": "Cloud & Platform",
     "items": [
       "AWS",
-      "AWS Lambda",
-      "AWS SQS",
-      "AWS EventBridge",
-      "AWS RDS",
-      "AWS S3",
-      "AWS SES",
+      "Lambda",
+      "SQS",
+      "EventBridge",
+      "RDS",
+      "S3",
+      "SES",
       "CloudFront",
       "GitHub Actions"
+    ]
+  },
+  {
+    "group": "Mobile & Real-Time Communications",
+    "items": [
+      "Flutter",
+      "Android",
+      "iOS",
+      "SIP/VoIP",
+      "Firebase Cloud Messaging",
+      "APNs",
+      "CallKit",
+      "Linphone",
+      "Couchbase Lite"
     ]
   }
 ]
