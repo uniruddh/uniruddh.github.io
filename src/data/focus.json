@@ -1,16 +1,21 @@
 {
-  "heading": "What I'm building now",
-  "lead": "At Particle41 I lead backend architecture for multi-tenant SaaS products and build AI-assisted developer tooling alongside it.",
+  "heading": "How I help",
+  "lead": "I work with teams that need clearer architecture, steadier backend delivery, and pragmatic AI-assisted engineering workflows.",
   "items": [
     {
-      "title": "Multi-tenant SaaS backends",
-      "body": "Leading backend architecture and delivery for HOA Management and Restaurant Management product work. Directing a team of up to seven and setting the clean architecture and test coverage standards that hold as the team grows.",
+      "title": "SaaS Backend Architecture",
+      "body": "Designing and leading multi-tenant backend platforms with clear system boundaries, practical API contracts, maintainable data models, and delivery standards that survive team growth.",
       "tags": ["NestJS", "TypeScript", "PostgreSQL", "AWS", "Event-driven"]
     },
     {
-      "title": "AI-Assisted Developer Tooling",
-      "body": "Building developer tooling and engineering workflow automation that help teams reason about requirements, implementation paths, and delivery quality. The hard parts are orchestration, practical evaluation, and knowing which parts of the software lifecycle genuinely benefit from model-assisted delegation.",
+      "title": "AI-Assisted Engineering Workflows",
+      "body": "Building developer tooling and workflow automation that help teams reason about requirements, implementation paths, review quality, and delivery risk without turning engineering judgment into a black box.",
       "tags": ["Multi-agent orchestration", "LLM APIs", "Prompt engineering", "Google Gemini"]
+    },
+    {
+      "title": "Technical Review & Team Standards",
+      "body": "Helping teams stabilize architecture, improve code review habits, raise test quality, and recover delivery momentum when product complexity has started to outrun the system.",
+      "tags": ["Architecture review", "Clean architecture", "Testing strategy", "Team leadership"]
     }
   ]
 }

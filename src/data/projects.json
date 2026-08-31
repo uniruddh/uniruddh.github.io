@@ -4,7 +4,7 @@
     "subtitle": "Multi-tenant enterprise SaaS platform",
     "period": "Aug 2025 – Present",
     "role": "Backend architecture and delivery lead",
-    "description": "Backend architecture and delivery leadership for a multi-tenant SaaS platform, with a focus on clean system boundaries, scalable delivery practices, and maintainable product engineering.",
+    "description": "Safe anonymized case study: backend architecture and delivery leadership for a multi-tenant SaaS platform, focused on clear service boundaries, reliable delivery practices, and maintainable product engineering.",
     "stack": ["NestJS", "TypeScript", "PostgreSQL", "TypeORM", "AWS"],
     "visibility": "private"
   },
@@ -13,7 +13,7 @@
     "subtitle": "Enterprise backend platform",
     "period": "Feb 2024 – Jan 2025",
     "role": "Backend lead",
-    "description": "Backend leadership for a multi-tenant restaurant management platform, covering product architecture, API delivery, and engineering standards for maintainable enterprise services.",
+    "description": "Safe anonymized case study: backend leadership for a restaurant management platform, covering product architecture, API delivery, and engineering standards for maintainable enterprise services.",
     "stack": ["Kotlin", "Java", "Spring Boot", "REST APIs", "PostgreSQL"],
     "visibility": "private"
   },
