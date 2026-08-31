@@ -5,9 +5,9 @@
   "tagline": "I help teams design and deliver multi-tenant SaaS backends, AI-assisted engineering workflows, and reliable enterprise platforms.",
   "location": "Gujarat, India",
   "about": [
-    "I'm Aniruddh Bhilvare, a Staff Software Engineer based in Gujarat, India. I help teams turn complex product requirements into maintainable backend systems, cleaner delivery habits, and software that can keep growing after the first release.",
-    "My first decade was mobile, building Android and iOS applications at Ecosmob, Netrix, and YUJ Designs, including a SIP/VoIP client for enterprise customers and a connected-vehicle app for Citroën. Since then I've worked mainly on backend and distributed systems: multi-tenant SaaS platforms, cloud services, and the data models underneath them.",
-    "At Particle41 I combine enterprise application delivery with AI-assisted engineering workflows: developer tooling, delivery automation, and practical evaluation loops that help teams move faster without losing engineering discipline. Along the way I've led teams of up to 8 engineers and set standards for system design, clean architecture, and code review."
+    "I'm Aniruddh Bhilvare, a Staff Software Engineer focused on SaaS architecture, backend and distributed systems, and Agentic AI. I help teams turn complex product requirements into maintainable systems, cleaner delivery practices, and software that can keep growing after the first release.",
+    "I started my career building mobile applications across Android and iOS at Ecosmob, Netrix, and YUJ Designs, including a SIP/VoIP client for enterprise customers and a connected-vehicle app for Citroën. Over the years, my focus shifted toward backend and distributed systems, where I've worked on multi-tenant SaaS platforms, cloud services, and the data models that support them.",
+    "At Particle41, I combine enterprise software delivery with AI-assisted engineering workflows, including developer tooling, delivery automation, and practical evaluation loops that help teams move faster without compromising engineering discipline. I've also led teams of up to 8 engineers and helped establish standards for system design, clean architecture, testing, and code review."
   ],
   "email": "uniruddh@gmail.com",
   "resumeFile": "/Aniruddh-Bhilvare-Resume.pdf",
