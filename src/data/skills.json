@@ -2,7 +2,6 @@
   {
     "group": "Architecture & Engineering",
     "items": [
-      "SaaS Architecture",
       "System Design",
       "Multi-Tenant Architecture",
       "Event-Driven Architecture",
@@ -15,10 +14,9 @@
   {
     "group": "AI Engineering",
     "items": [
-      "Agentic AI",
+      "Agentic Workflows",
       "AI-Assisted Software Engineering",
       "Multi-Agent Orchestration",
-      "AI Evaluation",
       "Developer Tooling",
       "Anthropic Claude",
       "Google Gemini"
