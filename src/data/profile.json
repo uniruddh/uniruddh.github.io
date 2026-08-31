@@ -19,8 +19,8 @@
     "stackoverflow": "https://stackoverflow.com/users/2571277/uniruddh"
   },
   "socials": [
-    { "label": "GitHub", "icon": "github", "href": "https://github.com/uniruddh" },
     { "label": "LinkedIn", "icon": "linkedin", "href": "https://www.linkedin.com/in/uniruddh/" },
+    { "label": "GitHub", "icon": "github", "href": "https://github.com/uniruddh" },
     {
       "label": "Stack Overflow",
       "icon": "stackoverflow",

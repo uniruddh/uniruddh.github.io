@@ -41,10 +41,23 @@ import SocialIcon from "./SocialIcon.astro";
   </p>
 
   <div class="no-print mt-8 flex flex-wrap items-center gap-3">
+    {
+      profile.socials.map((social) => (
+        <a
+          href={social.href}
+          rel="me noopener"
+          class="inline-flex items-center gap-2 rounded-md border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-700 transition-colors hover:border-ink-300 hover:bg-ink-50 dark:border-ink-800 dark:text-ink-300 dark:hover:border-ink-700 dark:hover:bg-ink-900"
+        >
+          <SocialIcon icon={social.icon} />
+          {social.label}
+        </a>
+      ))
+    }
+
     <a
       href={profile.resumeFile}
       download
-      class="inline-flex items-center gap-2 rounded-md bg-ink-900 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-ink-800 dark:bg-white dark:text-ink-950 dark:hover:bg-ink-100"
+      class="inline-flex items-center gap-2 rounded-md border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-700 transition-colors hover:border-ink-300 hover:bg-ink-50 dark:border-ink-800 dark:text-ink-300 dark:hover:border-ink-700 dark:hover:bg-ink-900"
     >
       <svg
         class="h-4 w-4"
@@ -61,18 +74,5 @@ import SocialIcon from "./SocialIcon.astro";
       </svg>
       Download CV
     </a>
-
-    {
-      profile.socials.map((social) => (
-        <a
-          href={social.href}
-          rel="me noopener"
-          class="inline-flex items-center gap-2 rounded-md border border-ink-200 px-4 py-2.5 text-sm font-medium text-ink-700 transition-colors hover:border-ink-300 hover:bg-ink-50 dark:border-ink-800 dark:text-ink-300 dark:hover:border-ink-700 dark:hover:bg-ink-900"
-        >
-          <SocialIcon icon={social.icon} />
-          {social.label}
-        </a>
-      ))
-    }
   </div>
 </section>
